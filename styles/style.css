@@ -16,6 +16,7 @@
   padding-right: 80px;
   position: relative;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .nav {
@@ -33,6 +34,7 @@
   list-style: none;
   padding-left: 0;
   margin-top: 8px;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -68,7 +70,7 @@
   top: 135px;
   right: 20px;
   max-width: 636px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .header__footer {
@@ -120,12 +122,12 @@
 
 .staff__cards {
   max-width: 760px;
-  margin-top: 68px;
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
-  margin: 68px auto;
+  margin: 68px auto 0;
   list-style: none;
+  padding: 0;
 }
 
 .card {
@@ -407,11 +409,11 @@
   color: #fff;
   padding: 60px 102px 60px 80px;
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  min-height: 224px;
 }
 
 .footer__columns {
   display: flex;
+  min-height: 224px;
 }
 
 .footer__column_content_hours {
@@ -470,5 +472,4 @@
 }
 
 .footer__copyright {
-  margin-top: 100px;
 }
