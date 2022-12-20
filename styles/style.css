@@ -1,5 +1,3 @@
-/* Add your class here */
-
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -21,7 +19,6 @@
 }
 
 .nav {
-  /* Add flex properties here */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +44,9 @@
   font-weight: bold;
 }
 
-/* Add the hover state styles for .nav__link here */
+.nav__link:hover {
+  color: #1f69c9;
+}
 
 .header__title {
   font-size: 66px;
@@ -65,7 +64,9 @@
 }
 
 .header__image {
-  /* Write styles here */
+  position: absolute;
+  top: 135px;
+  right: 20px;
   max-width: 636px;
   z-index: 1;
 }
@@ -87,7 +88,9 @@
   text-decoration: none;
 }
 
-/* Add the hover state styles for .header__link here */
+.header__link:hover {
+  color: #1f69c9;
+}
 
 .header__address {
   margin: 0;
@@ -115,7 +118,15 @@
   margin: 24px 0 0;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+.staff__cards {
+  max-width: 760px;
+  margin-top: 68px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 68px auto;
+  list-style: none;
+}
 
 .card {
   background-color: #fff;
@@ -151,8 +162,6 @@
   font-size: 14px;
   line-height: 20px;
   color: #838383;
-  /* Auto margins applied on a flex item automatically extend specified margin to occupy the extra space in the flex container */
-  /* In our case, this pushes the element down to the bottom */
   margin-top: auto;
 }
 
@@ -226,6 +235,10 @@
   text-decoration: none;
 }
 
+.events__more:hover {
+  color: #1f69c9;
+}
+
 /* Add the hover state styles for .events__more here */
 
 .events__cover {
@@ -249,31 +262,26 @@
 }
 
 .person_name_feynman {
-  /* Use correct values of top/right/bottom/left properties to position the element */
   top: -30px;
   left: 319px;
 }
 
 .person_name_burbidge {
-  /* Use correct values of top/right/bottom/left properties to position the element */
   right: 125px;
   top: 96px;
 }
 
 .person_name_cannon {
-  /* Use correct values of top/right/bottom/left properties to position the element */
   right: 216px;
   bottom: 18px;
 }
 
 .person_name_mitchell {
-  /* Use correct values of top/right/bottom/left properties to position the element */
   bottom: 82px;
   left: 142px;
 }
 
 .person_name_tarter {
-  /* Use correct values of top/right/bottom/left properties to position the element */
   top: 79px;
   left: 159px;
 }
@@ -319,11 +327,13 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 
 .step {
-  /* Add styles */
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -350,6 +360,8 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  gap: 120px;
 }
 
 .about__title {
@@ -359,6 +371,7 @@
   font-weight: 500;
   z-index: 1;
   max-width: 154px;
+  position: relative;
 }
 
 .about__content {
@@ -366,6 +379,11 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .about__paragraph {
@@ -377,35 +395,59 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  top: -121px;
+  left: -91px;
+  z-index: 0;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 60px 102px 60px 80px;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  min-height: 224px;
 }
 
 .footer__columns {
+  display: flex;
 }
 
 .footer__column_content_hours {
+  margin-left: auto;
 }
 
 .footer__column_content_social {
+  margin-left: 100px;
 }
 
 .footer__logo {
+  width: 116px;
+  height: 21px;
 }
 
 .footer__list {
-  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
+  margin-bottom: 16px;
+}
+
+.footer__list-item {
+  margin-bottom: 16px;
+}
+
+.footer__list-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .footer__column-heading {
+  margin: 0 0 20px 0;
+  font-size: 16px;
 }
 
 .footer__column-link {
@@ -413,10 +455,20 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer__column-link:hover {
+  color: #c1c1c1;
 }
 
 .footer__social-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
+  margin-top: 100px;
 }

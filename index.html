@@ -9,7 +9,6 @@
   </head>
 
   <body>
-    <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
     <div class="page">
       <header class="header">
         <nav class="nav">
@@ -18,7 +17,6 @@
             alt="Practicum Library Logo"
             class="logo"
           />
-          <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
               <a class="nav__link" href="#staff">Staff picks</a>
@@ -60,8 +58,7 @@
         <section class="staff" id="staff">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
-          <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <ul>
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -211,7 +208,6 @@
               />
             </div>
           </div>
-          <!-- Start creating the composition here -->
         </section>
 
         <section class="membership" id="membership">
@@ -290,13 +286,52 @@
               the American Geophysical Union.
             </p>
           </div>
-          <!-- <div class="about__circle"></div> -->
+          <div class="about__circle"></div>
         </section>
       </main>
     </div>
 
     <footer class="footer" id="footer">
-      <!-- The time to mark up the footer has come, you can do it 💪 -->
+      <div class="footer__columns">
+        <div class="footer__column">
+          <img
+            src="./images/logo_practicum.svg"
+            alt="white Practicum text logo"
+            class="footer__logo"
+          />
+        </div>
+        <div class="footer__column footer__column_content_hours">
+          <h2 class="footer__column-heading">Hours</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+            <li class="footer__list-item">Weekends: 10am - 6pm</li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_content_social">
+          <h2 class="footer__column-heading">Social media</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__column-link"
+                ><img
+                  src="./images/facebook_white.svg"
+                  alt="logo for Facebook.com"
+                  class="footer__social-icon"
+                />Facebook</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__column-link"
+                ><img
+                  src="./images/instagram_white.svg"
+                  alt="logo for Instagram.com"
+                  class="footer__social-icon"
+                />Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">© 2022 Kevin Wessa</p>
     </footer>
   </body>
 </html>
